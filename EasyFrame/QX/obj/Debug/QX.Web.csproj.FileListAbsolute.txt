@@ -1,0 +1,12 @@
+E:\netprojects\QX\QX\bin\QX.dll.config
+E:\netprojects\QX\QX\bin\QX.dll
+E:\netprojects\QX\QX\bin\QX.pdb
+E:\netprojects\QX\QX\bin\EntityFramework.dll
+E:\netprojects\QX\QX\bin\EntityFramework.SqlServer.dll
+E:\netprojects\QX\QX\bin\MySql.Data.dll
+E:\netprojects\QX\QX\bin\MySql.Data.Entity.EF6.dll
+E:\netprojects\QX\QX\bin\EntityFramework.xml
+E:\netprojects\QX\QX\bin\EntityFramework.SqlServer.xml
+E:\netprojects\QX\QX\obj\Debug\QX.Web.csprojResolveAssemblyReference.cache
+E:\netprojects\QX\QX\obj\Debug\QX.dll
+E:\netprojects\QX\QX\obj\Debug\QX.pdb

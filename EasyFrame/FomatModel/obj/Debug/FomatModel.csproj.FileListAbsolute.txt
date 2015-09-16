@@ -1,0 +1,4 @@
+E:\netprojects\QX\FomatModel\bin\Debug\FomatModel.dll
+E:\netprojects\QX\FomatModel\bin\Debug\FomatModel.pdb
+E:\netprojects\QX\FomatModel\obj\Debug\FomatModel.dll
+E:\netprojects\QX\FomatModel\obj\Debug\FomatModel.pdb

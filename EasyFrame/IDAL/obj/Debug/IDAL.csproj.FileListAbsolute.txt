@@ -1,0 +1,11 @@
+E:\netprojects\QX\IDAL\bin\Debug\IDAL.dll
+E:\netprojects\QX\IDAL\bin\Debug\IDAL.pdb
+E:\netprojects\QX\IDAL\obj\Debug\IDAL.csprojResolveAssemblyReference.cache
+E:\netprojects\QX\IDAL\obj\Debug\IDAL.dll
+E:\netprojects\QX\IDAL\obj\Debug\IDAL.pdb
+E:\netprojects\QX\IDAL\bin\Debug\QX.Entity.dll
+E:\netprojects\QX\IDAL\bin\Debug\EntityFramework.dll
+E:\netprojects\QX\IDAL\bin\Debug\QX.Entity.pdb
+E:\netprojects\QX\IDAL\bin\Debug\EntityFramework.xml
+E:\netprojects\QX\QX.Web\bin\IDAL.dll
+E:\netprojects\QX\QX.Web\bin\IDAL.pdb

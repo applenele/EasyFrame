@@ -1,0 +1,8 @@
+E:\netprojects\QX\DI\bin\Debug\DI.dll
+E:\netprojects\QX\DI\bin\Debug\DI.pdb
+E:\netprojects\QX\DI\obj\Debug\DI.dll
+E:\netprojects\QX\DI\obj\Debug\DI.pdb
+E:\netprojects\QX\DI\bin\Debug\Common.Logging.dll
+E:\netprojects\QX\DI\bin\Debug\Spring.Core.dll
+E:\netprojects\QX\QX.Web\bin\DI.dll
+E:\netprojects\QX\QX.Web\bin\DI.pdb

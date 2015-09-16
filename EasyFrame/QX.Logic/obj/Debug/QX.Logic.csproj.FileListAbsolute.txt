@@ -1,0 +1,12 @@
+E:\netprojects\QX\QX.Logic\bin\Debug\QX.Logic.dll
+E:\netprojects\QX\QX.Logic\bin\Debug\QX.Logic.pdb
+E:\netprojects\QX\QX.Logic\obj\Debug\QX.Logic.csprojResolveAssemblyReference.cache
+E:\netprojects\QX\QX.Logic\obj\Debug\QX.Logic.dll
+E:\netprojects\QX\QX.Logic\obj\Debug\QX.Logic.pdb
+E:\netprojects\QX\QX.Web\bin\QX.Logic.dll
+E:\netprojects\QX\QX.Web\bin\QX.Logic.pdb
+E:\githubrepository\EasyFrame\EasyFrame\QX.Web\bin\QX.Logic.dll
+E:\githubrepository\EasyFrame\EasyFrame\QX.Web\bin\QX.Logic.pdb
+E:\githubrepository\EasyFrame\EasyFrame\QX.Logic\obj\Debug\QX.Logic.csprojResolveAssemblyReference.cache
+E:\githubrepository\EasyFrame\EasyFrame\QX.Logic\obj\Debug\QX.Logic.dll
+E:\githubrepository\EasyFrame\EasyFrame\QX.Logic\obj\Debug\QX.Logic.pdb
