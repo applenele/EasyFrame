@@ -1,0 +1,73 @@
+﻿@model QX.Entity.Permission
+
+@{
+    ViewBag.Title = "Add";
+}
+<script>
+    function Success(data) {
+        alert(data.Msg);
+        location.href = data.BackUrl;
+    }
+</script>
+
+<div style="width:300px;margin:auto;">
+    <h3>增加权限</h3>
+    @using (Ajax.BeginForm("DoAdd", new { }, new AjaxOptions() { HttpMethod = "post", OnSuccess = "Success", LoadingElementId = "divMsg" }, new { id = "addProjectForm" }))
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+        @Html.HiddenFor(model => model.ParentID, new { @Value=ViewBag.Fid })
+        <div class="form-group">
+            权限名称
+            @Html.EditorFor(model => model.PName)
+            @Html.ValidationMessageFor(model => model.PName)
+        </div>
+
+        <div class="form-group">
+            权限的域名称
+            @Html.EditorFor(model => model.PAreaName)
+            @Html.ValidationMessageFor(model => model.PAreaName)
+        </div>
+
+        <div class="form-group">
+            控制器名称
+            @Html.EditorFor(model => model.PControllerName)
+            @Html.ValidationMessageFor(model => model.PControllerName)
+        </div>
+
+        <div class="form-group">
+            方法名称
+            @Html.EditorFor(model => model.PActionName)
+            @Html.ValidationMessageFor(model => model.PActionName)
+        </div>
+
+
+        <div class="form-group">
+            请求方法
+            @Html.DropDownListFor(model => model.PFormMethod, ViewBag.FormLst as List<SelectListItem>)
+            @Html.ValidationMessageFor(model => model.PFormMethod)
+        </div>
+
+        <div class="form-group">
+            URL
+            @Html.EditorFor(model => model.PURL)
+            @Html.ValidationMessageFor(model => model.PURL)
+        </div>
+
+        <div class="form-group">
+            是否展示
+            @Html.EditorFor(model => model.IsShow)
+            @Html.ValidationMessageFor(model => model.IsShow)
+        </div>
+
+        <div class="form-group">
+            备注
+            @Html.EditorFor(model => model.Remark)
+            @Html.ValidationMessageFor(model => model.Remark)
+        </div>
+
+        <p>
+            <input type="submit" class="btn btn-primary" value="增加" /> <a href="/Admin/Permission/Index">返回</a>
+        </p>
+    }
+</div style="width:300px;margin:auto;">

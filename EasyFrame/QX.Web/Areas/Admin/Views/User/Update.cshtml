@@ -1,0 +1,57 @@
+﻿@model QX.Entity.User
+
+@{
+    ViewBag.Title = "Update - User ";
+    QX.Entity.User user = ViewBag.User as QX.Entity.User;
+}
+<script>
+    function Success(data) {
+        if (data.Statu == "ok") {
+            alert(data.Msg);
+            location.href = data.BackUrl;
+        } else {
+            alert(data.Msg);
+        }
+    }
+</script>
+<div style="width:400px;margin:auto;">
+    <h2>修改用户</h2>
+    @using (Ajax.BeginForm("DoUpdate", new { }, new AjaxOptions() { HttpMethod = "post", OnSuccess = "Success", LoadingElementId = "divMsg" }, new { id = "updateUserForm" }))
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+        @Html.HiddenFor(model => model.ID, new { @Value = user.ID })
+        <div class="form-group">
+            用户名
+            @Html.TextBoxFor(model => model.Username, new { @Value = user.Username })
+            @Html.ValidationMessageFor(model => model.Username)
+        </div>
+
+        <div class="form-group">
+            密码（不修改请留空）
+            @Html.TextBoxFor(model => model.Password)
+            @Html.ValidationMessageFor(model => model.Password)
+        </div>
+
+        <div class="form-group">
+            性别
+            @Html.DropDownListFor(model => model.Gender, ViewBag.Gender as List<SelectListItem>)
+            @Html.ValidationMessageFor(model => model.Gender)
+        </div>
+
+        <div class="form-group">
+            部门
+            @Html.DropDownListFor(model => model.DepartmentID, ViewBag.Departments as List<SelectListItem>)
+            @Html.ValidationMessageFor(model => model.Gender)
+        </div>
+
+        <div class="form-group">
+            备注
+            @Html.EditorFor(model => model.Remark)
+            @Html.ValidationMessageFor(model => model.Remark)
+        </div>
+        <p>
+            <input type="submit" value="修改" class="btn btn-primary" />  <a href="/Admin/User/Index">返回</a>
+        </p>
+    }
+</div>

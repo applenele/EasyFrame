@@ -9,8 +9,8 @@ E:\netprojects\QX\IDAL\bin\Debug\QX.Entity.pdb
 E:\netprojects\QX\IDAL\bin\Debug\EntityFramework.xml
 E:\netprojects\QX\QX.Web\bin\IDAL.dll
 E:\netprojects\QX\QX.Web\bin\IDAL.pdb
-E:\githubrepository\EasyFrame\EasyFrame\QX.Web\bin\IDAL.dll
-E:\githubrepository\EasyFrame\EasyFrame\QX.Web\bin\IDAL.pdb
-E:\githubrepository\EasyFrame\EasyFrame\IDAL\obj\Debug\IDAL.csprojResolveAssemblyReference.cache
-E:\githubrepository\EasyFrame\EasyFrame\IDAL\obj\Debug\IDAL.dll
-E:\githubrepository\EasyFrame\EasyFrame\IDAL\obj\Debug\IDAL.pdb
+E:\gitrespositry\qx\QX\QX.Web\bin\IDAL.dll
+E:\gitrespositry\qx\QX\QX.Web\bin\IDAL.pdb
+E:\gitrespositry\qx\QX\IDAL\obj\Debug\IDAL.csprojResolveAssemblyReference.cache
+E:\gitrespositry\qx\QX\IDAL\obj\Debug\IDAL.dll
+E:\gitrespositry\qx\QX\IDAL\obj\Debug\IDAL.pdb

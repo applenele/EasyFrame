@@ -13,9 +13,9 @@ E:\netprojects\QX\QX.Web\bin\QX.Entity.dll.config
 E:\netprojects\QX\QX.Web\bin\QX.Entity.dll
 E:\netprojects\QX\QX.Web\bin\QX.Entity.pdb
 E:\netprojects\QX\QX.Entity\obj\Debug\QX.Entity.csprojResolveAssemblyReference.cache
-E:\githubrepository\EasyFrame\EasyFrame\QX.Web\bin\QX.Entity.dll.config
-E:\githubrepository\EasyFrame\EasyFrame\QX.Web\bin\QX.Entity.dll
-E:\githubrepository\EasyFrame\EasyFrame\QX.Web\bin\QX.Entity.pdb
-E:\githubrepository\EasyFrame\EasyFrame\QX.Entity\obj\Debug\QX.Entity.csprojResolveAssemblyReference.cache
-E:\githubrepository\EasyFrame\EasyFrame\QX.Entity\obj\Debug\QX.Entity.dll
-E:\githubrepository\EasyFrame\EasyFrame\QX.Entity\obj\Debug\QX.Entity.pdb
+E:\gitrespositry\qx\QX\QX.Web\bin\QX.Entity.dll.config
+E:\gitrespositry\qx\QX\QX.Web\bin\QX.Entity.dll
+E:\gitrespositry\qx\QX\QX.Web\bin\QX.Entity.pdb
+E:\gitrespositry\qx\QX\QX.Entity\obj\Debug\QX.Entity.dll
+E:\gitrespositry\qx\QX\QX.Entity\obj\Debug\QX.Entity.pdb
+E:\gitrespositry\qx\QX\QX.Entity\obj\Debug\QX.Entity.csprojResolveAssemblyReference.cache

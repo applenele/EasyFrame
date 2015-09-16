@@ -17,9 +17,9 @@ E:\netprojects\QX\DAL\bin\Debug\EntityFramework.SqlServer.xml
 E:\netprojects\QX\QX.Web\bin\DAL.dll.config
 E:\netprojects\QX\QX.Web\bin\DAL.dll
 E:\netprojects\QX\QX.Web\bin\DAL.pdb
-E:\githubrepository\EasyFrame\EasyFrame\QX.Web\bin\DAL.dll.config
-E:\githubrepository\EasyFrame\EasyFrame\QX.Web\bin\DAL.dll
-E:\githubrepository\EasyFrame\EasyFrame\QX.Web\bin\DAL.pdb
-E:\githubrepository\EasyFrame\EasyFrame\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
-E:\githubrepository\EasyFrame\EasyFrame\DAL\obj\Debug\DAL.dll
-E:\githubrepository\EasyFrame\EasyFrame\DAL\obj\Debug\DAL.pdb
+E:\gitrespositry\qx\QX\QX.Web\bin\DAL.dll.config
+E:\gitrespositry\qx\QX\QX.Web\bin\DAL.dll
+E:\gitrespositry\qx\QX\QX.Web\bin\DAL.pdb
+E:\gitrespositry\qx\QX\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\gitrespositry\qx\QX\DAL\obj\Debug\DAL.dll
+E:\gitrespositry\qx\QX\DAL\obj\Debug\DAL.pdb

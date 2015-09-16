@@ -2,7 +2,8 @@ E:\netprojects\QX\FomatModel\bin\Debug\FomatModel.dll
 E:\netprojects\QX\FomatModel\bin\Debug\FomatModel.pdb
 E:\netprojects\QX\FomatModel\obj\Debug\FomatModel.dll
 E:\netprojects\QX\FomatModel\obj\Debug\FomatModel.pdb
-E:\githubrepository\EasyFrame\EasyFrame\FomatModel\bin\Debug\FomatModel.dll
-E:\githubrepository\EasyFrame\EasyFrame\FomatModel\bin\Debug\FomatModel.pdb
-E:\githubrepository\EasyFrame\EasyFrame\FomatModel\obj\Debug\FomatModel.dll
-E:\githubrepository\EasyFrame\EasyFrame\FomatModel\obj\Debug\FomatModel.pdb
+E:\gitrespositry\qx\QX\FomatModel\bin\Debug\FomatModel.dll
+E:\gitrespositry\qx\QX\FomatModel\bin\Debug\FomatModel.pdb
+E:\gitrespositry\qx\QX\FomatModel\obj\Debug\FomatModel.csprojResolveAssemblyReference.cache
+E:\gitrespositry\qx\QX\FomatModel\obj\Debug\FomatModel.dll
+E:\gitrespositry\qx\QX\FomatModel\obj\Debug\FomatModel.pdb

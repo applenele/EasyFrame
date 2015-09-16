@@ -4,7 +4,7 @@ E:\netprojects\QX\Common\obj\Debug\Common.dll
 E:\netprojects\QX\Common\obj\Debug\Common.pdb
 E:\netprojects\QX\QX.Web\bin\Common.dll
 E:\netprojects\QX\QX.Web\bin\Common.pdb
-E:\githubrepository\EasyFrame\EasyFrame\QX.Web\bin\Common.dll
-E:\githubrepository\EasyFrame\EasyFrame\QX.Web\bin\Common.pdb
-E:\githubrepository\EasyFrame\EasyFrame\Common\obj\Debug\Common.dll
-E:\githubrepository\EasyFrame\EasyFrame\Common\obj\Debug\Common.pdb
+E:\gitrespositry\qx\QX\QX.Web\bin\Common.dll
+E:\gitrespositry\qx\QX\QX.Web\bin\Common.pdb
+E:\gitrespositry\qx\QX\Common\obj\Debug\Common.dll
+E:\gitrespositry\qx\QX\Common\obj\Debug\Common.pdb

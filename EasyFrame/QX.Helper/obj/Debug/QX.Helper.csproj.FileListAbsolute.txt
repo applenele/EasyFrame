@@ -1,0 +1,17 @@
+E:\gitrespositry\qx\QX\QX.Helper\bin\Debug\QX.Helper.dll
+E:\gitrespositry\qx\QX\QX.Helper\bin\Debug\QX.Helper.pdb
+E:\gitrespositry\qx\QX\QX.Helper\bin\Debug\DI.dll
+E:\gitrespositry\qx\QX\QX.Helper\bin\Debug\IBLL.dll
+E:\gitrespositry\qx\QX\QX.Helper\bin\Debug\Spring.Core.dll
+E:\gitrespositry\qx\QX\QX.Helper\bin\Debug\QX.Entity.dll
+E:\gitrespositry\qx\QX\QX.Helper\bin\Debug\Common.Logging.dll
+E:\gitrespositry\qx\QX\QX.Helper\bin\Debug\EntityFramework.dll
+E:\gitrespositry\qx\QX\QX.Helper\bin\Debug\DI.pdb
+E:\gitrespositry\qx\QX\QX.Helper\bin\Debug\IBLL.pdb
+E:\gitrespositry\qx\QX\QX.Helper\bin\Debug\QX.Entity.pdb
+E:\gitrespositry\qx\QX\QX.Helper\bin\Debug\EntityFramework.xml
+E:\gitrespositry\qx\QX\QX.Helper\obj\Debug\QX.Helper.csprojResolveAssemblyReference.cache
+E:\gitrespositry\qx\QX\QX.Helper\obj\Debug\QX.Helper.dll
+E:\gitrespositry\qx\QX\QX.Helper\obj\Debug\QX.Helper.pdb
+E:\gitrespositry\qx\QX\QX.Helper\bin\Debug\EasyUIModel.dll
+E:\gitrespositry\qx\QX\QX.Helper\bin\Debug\EasyUIModel.pdb

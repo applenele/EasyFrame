@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    public class BaseDAL<T>:IBaseDAL<T> where T:class,new ()
+    public class BaseDAL<T> : IBaseDAL<T> where T : class,new()
     {
         /// <summary>
         /// EF上下文对象
@@ -79,6 +79,7 @@ namespace DAL
         {
             //4.1将 对象 添加到 EF中
             DbEntityEntry entry = db.Entry<T>(model);
+            db.Set<T>().Attach(model);
             //4.2先设置 对象的包装 状态为 Unchanged
             entry.State = System.Data.Entity.EntityState.Unchanged;
             //4.3循环 被修改的属性名 数组
@@ -184,6 +185,39 @@ namespace DAL
             // 分页 一定注意： Skip 之前一定要 OrderBy
             return db.Set<T>().Where(whereLambda).OrderBy(orderBy).Skip((pageIndex - 1) * pageSize).Take(pageSize).ToList();
         }
+        #endregion
+
+        #region 分页 查询二
+        /// <summary>
+        /// 分页 查询二
+        /// </summary>
+        /// <typeparam name="S"></typeparam>
+        /// <param name="pageIndex"></param>
+        /// <param name="pageSize"></param>
+        /// <param name="total"></param>
+        /// <param name="whereLambda"></param>
+        /// <param name="orderByLambda"></param>
+        /// <param name="isASC"></param>
+        /// <returns></returns>
+        public IQueryable<T> LoadPageEntity<S>(int pageIndex, int pageSize, out int total, Func<T, bool> whereLambda, Func<T, S> orderByLambda, bool isASC)
+        {
+            var tmp = db.Set<T>().Where<T>(whereLambda);
+            total = tmp.Count();
+            //分页
+            if (isASC)
+            {
+                tmp = tmp.OrderBy<T, S>(orderByLambda)
+                     .Skip<T>((pageIndex - 1) * pageSize)
+                     .Take<T>(pageSize);
+            }
+            else
+            {
+                tmp = tmp.OrderByDescending<T, S>(orderByLambda)
+                        .Skip<T>((pageIndex - 1) * pageSize)
+                        .Take<T>(pageSize);
+            }
+            return tmp.AsQueryable();
+        } 
         #endregion
     }
 }

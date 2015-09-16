@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<script>
+    //去掉结点前面的文件及文件夹小图标
+    $(".tree-icon,.tree-file").removeClass("tree-icon tree-file");
+    $(".tree-icon,.tree-folder").removeClass("tree-icon tree-folder tree-folder-open tree-folder-closed");
+</script>
+<div style="width:1000px;margin:auto;">
+    <div>
+        <a href="/Admin/Role/Add">增加</a>
+        <a href="javascript:void(0)" id="btnDeleteRole">删除</a>
+        <a href="javascript:void(0)" id="btnUpdateRole">修改</a>
+        <a href="javascript:void(0)" id="btnLookAuthorize">查看授权</a>
+        <a href="javascript:void(0)" id="btnAuthorize">授权</a>
+        <a href="/Admin/Role/Recycle">回收站<span style="color:red;">@ViewBag.RecycleCount</span></a>
+    </div>
+    <table id="roleLst"></table>
+</div>
+<div id="wauthorize" class="easyui-window" title="授权" data-options="modal:true,closed:true,iconCls:'icon-save'" style="width:700px;height:500px;padding:10px;">
+    <div data-options="region:'center'" style="padding:10px;">
+        <table id="apermissionLst"></table>
+    </div>
+    <div data-options="region:'south',border:false" style="text-align:right;padding:5px 0 0;">
+        <input class="btn btn-primary" type="button" onclick="roleAuthorize()" value="提交" />
+    </div>
+    <div id="authorizeWarning">
+    </div>
+</div>
+
+<div id="wlookauthorize" class="easyui-window" title="查看授权" data-options="modal:true,closed:true,iconCls:'icon-save'" style="width:700px;height:500px;padding:10px;">
+    <div data-options="region:'center'" style="padding:10px;">
+        <table id="detailpermissionLst"></table>
+    </div>
+</div>
+
+<script src="~/Scripts/sys_role.js"></script>

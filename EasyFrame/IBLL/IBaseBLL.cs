@@ -93,6 +93,8 @@ namespace IBLL
         /// <returns></returns>
         List<T> GetPagedList<TKey>(int pageIndex, int pageSize, Expression<Func<T, bool>> whereLambda, Expression<Func<T, TKey>> orderBy);
         #endregion
- 
+
+
+        IQueryable<T> LoadPageEntity<S>(int pageIndex, int pageSize, out int total, Func<T, bool> whereLambda, Func<T, S> orderByLambda, bool isASC); 
     }
 }

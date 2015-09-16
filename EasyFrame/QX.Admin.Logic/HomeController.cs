@@ -7,7 +7,8 @@ using System.Web.Mvc;
 
 namespace QX.Admin.Logic
 {
-    public class HomeController : Controller
+    [QX.Web.Filters.AdminLoginValidate]
+    public class HomeController : BaseController
     {
         public ActionResult Index()
         {

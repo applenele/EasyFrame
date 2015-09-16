@@ -1,0 +1,5 @@
+E:\gitrespositry\qx\QX\EasyUIModel\bin\Debug\EasyUIModel.dll
+E:\gitrespositry\qx\QX\EasyUIModel\bin\Debug\EasyUIModel.pdb
+E:\gitrespositry\qx\QX\EasyUIModel\obj\Debug\EasyUIModel.csprojResolveAssemblyReference.cache
+E:\gitrespositry\qx\QX\EasyUIModel\obj\Debug\EasyUIModel.dll
+E:\gitrespositry\qx\QX\EasyUIModel\obj\Debug\EasyUIModel.pdb

@@ -10,7 +10,7 @@ namespace QX.Entity.Models
     public class DB : DbContext
     {
         public DB()
-            : base("mssqldb")
+            : base("mysqldb")
         {
         }
 

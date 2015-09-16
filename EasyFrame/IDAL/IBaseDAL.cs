@@ -94,5 +94,21 @@ namespace IDAL
         /// <returns></returns>
         List<T> GetPagedList<TKey>(int pageIndex, int pageSize, Expression<Func<T, bool>> whereLambda, Expression<Func<T, TKey>> orderBy);
         #endregion
+
+
+        #region  分页 二
+        /// <summary>
+        /// 分页 二
+        /// </summary>
+        /// <typeparam name="S"></typeparam>
+        /// <param name="pageIndex"></param>
+        /// <param name="pageSize"></param>
+        /// <param name="total"></param>
+        /// <param name="whereLambda"></param>
+        /// <param name="orderByLambda"></param>
+        /// <param name="isASC"></param>
+        /// <returns></returns>
+        IQueryable<T> LoadPageEntity<S>(int pageIndex, int pageSize, out int total, Func<T, bool> whereLambda, Func<T, S> orderByLambda, bool isASC); 
+        #endregion
     }
 }

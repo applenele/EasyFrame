@@ -42,8 +42,14 @@
     <Compile Include="IBaseBLL.cs" />
     <Compile Include="IBLLSession.cs" />
     <Compile Include="IBLLSessionFactory.cs" />
+    <Compile Include="IDepartmentBLL.cs" />
+    <Compile Include="IPermissionBLL.cs" />
+    <Compile Include="IRoleBLL.cs" />
+    <Compile Include="IRolePermissionBLL.cs" />
     <Compile Include="IUserBLL.cs" />
+    <Compile Include="IUserVipPermissionBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IUserRoleBLL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\QX.Entity\QX.Entity.csproj">

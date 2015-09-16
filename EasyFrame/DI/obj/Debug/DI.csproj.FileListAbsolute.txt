@@ -6,8 +6,8 @@ E:\netprojects\QX\DI\bin\Debug\Common.Logging.dll
 E:\netprojects\QX\DI\bin\Debug\Spring.Core.dll
 E:\netprojects\QX\QX.Web\bin\DI.dll
 E:\netprojects\QX\QX.Web\bin\DI.pdb
-E:\githubrepository\EasyFrame\EasyFrame\QX.Web\bin\DI.dll
-E:\githubrepository\EasyFrame\EasyFrame\QX.Web\bin\DI.pdb
-E:\githubrepository\EasyFrame\EasyFrame\DI\obj\Debug\DI.csprojResolveAssemblyReference.cache
-E:\githubrepository\EasyFrame\EasyFrame\DI\obj\Debug\DI.dll
-E:\githubrepository\EasyFrame\EasyFrame\DI\obj\Debug\DI.pdb
+E:\gitrespositry\qx\QX\QX.Web\bin\DI.dll
+E:\gitrespositry\qx\QX\QX.Web\bin\DI.pdb
+E:\gitrespositry\qx\QX\DI\obj\Debug\DI.dll
+E:\gitrespositry\qx\QX\DI\obj\Debug\DI.pdb
+E:\gitrespositry\qx\QX\DI\obj\Debug\DI.csprojResolveAssemblyReference.cache

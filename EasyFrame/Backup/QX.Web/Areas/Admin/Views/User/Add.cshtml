@@ -1,0 +1,58 @@
+﻿@model QX.Entity.User
+
+@{
+    ViewBag.Title = "Add";
+}
+<script>
+    function Success(data) {
+        if (data.Statu == "ok") {
+            alert(data.Msg);
+            location.href = data.BackUrl;
+        } else {
+            alert(data.Msg);
+        }
+    }
+</script>
+<div style="width:400px;margin:auto;">
+    <h2>增加用户</h2>
+    @using (Ajax.BeginForm("DoAdd", new { }, new AjaxOptions() { HttpMethod = "post", OnSuccess = "Success", LoadingElementId = "divMsg" }, new { id = "addUserForm" }))
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+        <div class="form-group">
+            用户名
+            @Html.EditorFor(model => model.Username)
+            @Html.ValidationMessageFor(model => model.Username)
+        </div>
+
+        <div class="form-group">
+            密码
+            @Html.EditorFor(model => model.Password)
+            @Html.ValidationMessageFor(model => model.Password)
+        </div>
+
+        <div class="form-group">
+            性别
+            @Html.DropDownListFor(model => model.Gender, ViewBag.Gender as List<SelectListItem>)
+            @Html.ValidationMessageFor(model => model.Gender)
+        </div>
+
+        <div class="form-group">
+            部门
+            @Html.DropDownListFor(model => model.DepartmentID, ViewBag.Departments as List<SelectListItem>)
+            @Html.ValidationMessageFor(model => model.Gender)
+        </div>
+
+        <div class="form-group">
+            备注
+            @Html.EditorFor(model => model.Remark)
+            @Html.ValidationMessageFor(model => model.Remark)
+        </div>
+
+
+
+        <p>
+            <input type="submit" value="增加" class="btn btn-primary" /> <a href="/Admin/User/Index">返回</a>
+        </p>
+    }
+</div>

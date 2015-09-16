@@ -42,8 +42,14 @@
     <Compile Include="BaseBLL.cs" />
     <Compile Include="BLLSession.cs" />
     <Compile Include="BLLSessionFactory.cs" />
+    <Compile Include="DepartmentBLL.cs" />
+    <Compile Include="PermissionBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoleBLL.cs" />
+    <Compile Include="RolePermissionBLL.cs" />
     <Compile Include="UserBLL.cs" />
+    <Compile Include="UserRoleBLL.cs" />
+    <Compile Include="UserVipPermissionBLL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DI\DI.csproj">

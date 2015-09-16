@@ -37,13 +37,6 @@ namespace BLL
             {
                 if (iDbSession == null)
                 {
-                    ////1.读取配置文件
-                    //string strFactoryDLL = Common.ConfigurationHelper.AppSetting("DBSessionFatoryDLL");
-                    //string strFactoryType = Common.ConfigurationHelper.AppSetting("DBSessionFatory");
-                    ////2.1通过反射创建 DBSessionFactory 工厂对象
-                    //Assembly dalDLL = Assembly.LoadFrom(strFactoryDLL);
-                    //Type typeDBSessionFatory = dalDLL.GetType(strFactoryType);
-                    //IDAL.IDBSessionFactory sessionFactory =Activator.CreateInstance(typeDBSessionFatory) as IDAL.IDBSessionFactory;
 
                     //2.根据配置文件内容 使用 DI层里的Spring.Net 创建 DBSessionFactory 工厂对象
                     IDAL.IDBSessionFactory sessionFactory = DI.SpringHelper.GetObject<IDAL.IDBSessionFactory>("DBSessionFactory");
@@ -51,7 +44,6 @@ namespace BLL
                     // 3.通过 工厂 创建 DBSession对象
                     iDbSession = sessionFactory.GetDBSession();
 
-                    //iDbSession = new DBSessionFactory().GetDBSession();
                 }
                 return iDbSession;
             }
@@ -162,6 +154,11 @@ namespace BLL
             return idal.GetPagedList(pageIndex, pageSize, whereLambda, orderBy);
         }
         #endregion
-   
+
+
+        public IQueryable<T> LoadPageEntity<S>(int pageIndex, int pageSize, out int total, Func<T, bool> whereLambda, Func<T, S> orderByLambda, bool isASC)
+        {
+            return idal.LoadPageEntity(pageIndex,pageSize, out total, whereLambda, orderByLambda, isASC);
+        }
     }
 }

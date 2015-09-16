@@ -5,8 +5,8 @@ E:\netprojects\QX\QX.Admin.Logic\obj\Debug\QX.Admin.Logic.pdb
 E:\netprojects\QX\QX.Web\bin\QX.Admin.Logic.dll
 E:\netprojects\QX\QX.Web\bin\QX.Admin.Logic.pdb
 E:\netprojects\QX\QX.Admin.Logic\obj\Debug\QX.Admin.Logic.csprojResolveAssemblyReference.cache
-E:\githubrepository\EasyFrame\EasyFrame\QX.Web\bin\QX.Admin.Logic.dll
-E:\githubrepository\EasyFrame\EasyFrame\QX.Web\bin\QX.Admin.Logic.pdb
-E:\githubrepository\EasyFrame\EasyFrame\QX.Admin.Logic\obj\Debug\QX.Admin.Logic.csprojResolveAssemblyReference.cache
-E:\githubrepository\EasyFrame\EasyFrame\QX.Admin.Logic\obj\Debug\QX.Admin.Logic.dll
-E:\githubrepository\EasyFrame\EasyFrame\QX.Admin.Logic\obj\Debug\QX.Admin.Logic.pdb
+E:\gitrespositry\qx\QX\QX.Web\bin\QX.Admin.Logic.dll
+E:\gitrespositry\qx\QX\QX.Web\bin\QX.Admin.Logic.pdb
+E:\gitrespositry\qx\QX\QX.Admin.Logic\obj\Debug\QX.Admin.Logic.csprojResolveAssemblyReference.cache
+E:\gitrespositry\qx\QX\QX.Admin.Logic\obj\Debug\QX.Admin.Logic.dll
+E:\gitrespositry\qx\QX\QX.Admin.Logic\obj\Debug\QX.Admin.Logic.pdb

@@ -1,5 +1,115 @@
-﻿@{
-    ViewBag.Title = "Index";
-    Layout=null;
+﻿﻿@{
+    Layout = null;
 }
 
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>后台管理首页</title>
+
+    <link href="~/Content/themes/bootstrap/easyui.css" rel="stylesheet" />
+    <link href="~/Content/themes/icon.css" rel="stylesheet" />
+    <link href="~/Content/Styles/sys_index.css" rel="stylesheet" />
+
+    <script src="~/Scripts/jquery-1.11.2.min.js"></script>
+    <script src="~/Scripts/jquery.easyui.min.js"></script>
+    <script src="~/Scripts/easyui-lang-zh_CN.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            bindEvent();
+        });
+        //绑定事件
+        function bindEvent() {
+            $(".detailLink123").click(function () {
+                var title = $(this).text();
+                var url = $(this).attr("url");
+                var isExt = $('#tt').tabs('exists', title);//判断页签是否已经存在
+                if (isExt) {
+                    $('#tt').tabs('select', title);//如果存在选中
+                    return;
+                }
+                $('#tt').tabs('add', {//添加页签
+                    title: title,
+                    content: createContent(url),
+                    closable: true
+                });
+
+            });
+        }
+        function createContent(url) {
+            var strHtml = '<iframe src="' + url + '" scrolling="no" frameborder="0" width="100%" height="100%"></iframe>';
+            return strHtml;
+        }
+    </script>
+</head>
+<body class="easyui-layout">
+    <!---------顶部布局结束------------------------------------->
+
+    <div data-options="region:'north',border:false" style="height:70px;background:#E7F0FF;padding:10px; overflow:hidden;background-image:url(/Content/Images/bg3.png)">
+
+        <img src="~/Content/Images/sys_logo.png" style="height:30px;width:auto;margin:10px;" />
+        <span class="txt"><a href="javascript:$('#frmLogout').submit()">注销</a></span>
+        @using (Html.BeginForm("Logout", "Login", FormMethod.Post, new { id = "frmLogout", style = "display:none;" }))
+        {
+            @Html.AntiForgeryToken();
+        }
+        <span class="txt"> @ViewBag.CurrentUser.Username </span>
+    </div>
+
+    <!---------顶部布局结束------------------------------------->
+    <!---------左侧布局------------------------------------>
+
+    <div data-options="region:'west',split:true,title:'菜单'" style="width:220px;padding:5px;">
+        <div class="easyui-accordion" style="width:auto;height:auto;">
+
+            <div title="系统设置" data-options="iconCls:'icon-ok'" style="overflow:auto;">
+                <div class="items">
+                    <div class="item">
+                        <img src="/Content/Images/square_blueS.gif" />
+                        <a href="javascript:void(0)" class="detailLink123" url="/Admin/Permission/Index">权限管理</a>
+                    </div>
+                    <div class="item">
+                        <img src="/Content/Images/square_blueS.gif" />
+                        <a href="javascript:void(0)" class="detailLink123" url="/Admin/Role/Index">角色管理</a>
+                    </div>
+                    <div class="item">
+                        <img src="/Content/Images/square_blueS.gif" />
+                        <a href="javascript:void(0)" class="detailLink123" url="/Admin/User/Index">用户设置</a>
+                    </div>
+                    <div class="item">
+                        <img src="/Content/Images/square_blueS.gif" />
+                        <a href="javascript:void(0)" class="detailLink123" url="/Admin/Department/Index">部门管理</a>
+                    </div>
+                </div>
+            </div>
+
+            <div title="信息管理" data-options="iconCls:'icon-ok'" style="overflow:auto;padding:10px;">
+            </div>
+
+            <div title="前台管理" data-options="iconCls:'icon-ok'" style="overflow:auto;padding:10px;">
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!---------左侧布局结束------------------------------------>
+    <div data-options="region:'south',border:false" style="height:20px;background:#E7F0FF;padding:5px; text-align:center">版权所有&copy;nele</div>
+    <!---------中间布局------------------------------------->
+    <div data-options="region:'center',title:'Content'">
+
+        <div class="easyui-tabs" style="width:700px;height:250px" fit="true" id="tt">
+            <div title="权限管理" style="padding:0px" data-options="closable:true">
+                <iframe src="/Admin/Permission/Index" scrolling="yes" frameborder="0" width="100%" height="100%"></iframe>
+            </div>
+        </div>
+    </div>
+    <!---------中间布局结束------------------------------------->
+
+
+</body>
+
+</html>

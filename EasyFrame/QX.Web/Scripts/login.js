@@ -11,10 +11,10 @@
 $(document).ready(function () {
 
     $('#btnLogin').click(function () {
-        changeCheckCode();
         var username = $('#txtUsername').val();
         var password = $('#txtPassword').val();
         var code = $("#txtCode").val();
+        var remember = $("#txtRemember").is(":checked");
         if (username == '') {
             show_err_msg("用户名不能为空");
             return;
@@ -31,7 +31,7 @@ $(document).ready(function () {
         $.ajax({
             url: "/Login/DoLogin",
             method: "post",
-            data: { "username": username, "password": password, "code": code },
+            data: { "username": username, "password": password, "code": code, "remember": remember },
             success: function (data) {
                 if (data.Statu == "ok") {
                     alert(data.Msg);
@@ -44,7 +44,8 @@ $(document).ready(function () {
             error: function (data) {
                 show_err_msg("登陆出错请重试！");
             }
-        })
+        });
+        changeCheckCode();
     });
 
 

@@ -1,0 +1,41 @@
+﻿@model QX.Entity.Department
+
+@{
+    ViewBag.Title = "Add";
+}
+
+<script>
+    function Success(data) {
+        if (data.Statu == "ok") {
+            alert(data.Msg);
+            location.href = data.BackUrl;
+        }
+        else {
+            alert(data.Msg);
+            location.reload();
+        }
+    }
+</script>
+
+<div style="width:400px;margin:auto;">
+    <h2>增加部门</h2>
+    @using (Ajax.BeginForm("DoAdd", new { }, new AjaxOptions() { HttpMethod = "post", OnSuccess = "Success", LoadingElementId = "divMsg" }, new { id = "addProjectForm" }))
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+        <div class="form-group">
+            部门名称
+            @Html.EditorFor(model => model.DepartmentName)
+            @Html.ValidationMessageFor(model => model.DepartmentName)
+        </div>
+
+        <div class="form-group">
+            备注
+            @Html.EditorFor(model => model.Remark)
+            @Html.ValidationMessageFor(model => model.Remark)
+        </div>
+        <p>
+            <input type="submit" value="增加" class="btn btn-primary" /> <a href="/Admin/Department/Index">返回</a>
+        </p>
+    }
+</div>

@@ -30,6 +30,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
@@ -42,9 +43,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdminAreaRegistration.cs" />
+    <Compile Include="BaseController.cs" />
+    <Compile Include="DepartmentController.cs" />
     <Compile Include="HomeController.cs" />
+    <Compile Include="JsonNetResult.cs" />
     <Compile Include="LoginController.cs" />
+    <Compile Include="PermissionController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoleController.cs" />
+    <Compile Include="UserController.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.csproj">
@@ -54,6 +61,10 @@
     <ProjectReference Include="..\DI\DI.csproj">
       <Project>{ff7fe76a-8247-4670-b91a-f345fb231811}</Project>
       <Name>DI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EasyUIModel\EasyUIModel.csproj">
+      <Project>{f11448f6-36fc-4bf7-a82a-0fc247278a80}</Project>
+      <Name>EasyUIModel</Name>
     </ProjectReference>
     <ProjectReference Include="..\FomatModel\FomatModel.csproj">
       <Project>{8bac649b-874d-4233-8ee1-b7a15618315c}</Project>
@@ -66,6 +77,18 @@
     <ProjectReference Include="..\QX.Entity\QX.Entity.csproj">
       <Project>{b1b55db3-fa47-4e1a-8bbe-82b8334f1873}</Project>
       <Name>QX.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QX.Helper\QX.Helper.csproj">
+      <Project>{346787ba-2e46-4bb5-9075-4657c2336c63}</Project>
+      <Name>QX.Helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QX.Web\QX.Web.csproj">
+      <Project>{e1408abf-49f2-4448-b758-73f3d9879976}</Project>
+      <Name>QX.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ViewModel\ViewModel.csproj">
+      <Project>{52bdb558-7787-4538-b54b-87ef57e8495d}</Project>
+      <Name>ViewModel</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
