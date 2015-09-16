@@ -17,3 +17,8 @@ E:\netprojects\QX\BLL\bin\Debug\QX.Entity.pdb
 E:\netprojects\QX\BLL\bin\Debug\EntityFramework.xml
 E:\netprojects\QX\QX.Web\bin\BLL.dll
 E:\netprojects\QX\QX.Web\bin\BLL.pdb
+E:\githubrepository\EasyFrame\EasyFrame\QX.Web\bin\BLL.dll
+E:\githubrepository\EasyFrame\EasyFrame\QX.Web\bin\BLL.pdb
+E:\githubrepository\EasyFrame\EasyFrame\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+E:\githubrepository\EasyFrame\EasyFrame\BLL\obj\Debug\BLL.dll
+E:\githubrepository\EasyFrame\EasyFrame\BLL\obj\Debug\BLL.pdb

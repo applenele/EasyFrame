@@ -7,3 +7,12 @@ E:\netprojects\QX\IBLL\bin\Debug\EntityFramework.xml
 E:\netprojects\QX\IBLL\obj\Debug\IBLL.dll
 E:\netprojects\QX\IBLL\obj\Debug\IBLL.pdb
 E:\netprojects\QX\IBLL\obj\Debug\IBLL.csprojResolveAssemblyReference.cache
+E:\githubrepository\EasyFrame\EasyFrame\IBLL\bin\Debug\IBLL.dll
+E:\githubrepository\EasyFrame\EasyFrame\IBLL\bin\Debug\IBLL.pdb
+E:\githubrepository\EasyFrame\EasyFrame\IBLL\bin\Debug\QX.Entity.dll
+E:\githubrepository\EasyFrame\EasyFrame\IBLL\bin\Debug\EntityFramework.dll
+E:\githubrepository\EasyFrame\EasyFrame\IBLL\bin\Debug\QX.Entity.pdb
+E:\githubrepository\EasyFrame\EasyFrame\IBLL\bin\Debug\EntityFramework.xml
+E:\githubrepository\EasyFrame\EasyFrame\IBLL\obj\Debug\IBLL.csprojResolveAssemblyReference.cache
+E:\githubrepository\EasyFrame\EasyFrame\IBLL\obj\Debug\IBLL.dll
+E:\githubrepository\EasyFrame\EasyFrame\IBLL\obj\Debug\IBLL.pdb
